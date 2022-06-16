@@ -260,39 +260,6 @@
             <point key="canvasLocation" x="-416" y="1519"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="qv3-dL-jjo">
-            <objects>
-                <viewController id="e5F-ek-KoQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="X3U-Iw-eOp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AN-Ln-JKm">
-                                <rect key="frame" x="212" y="545" width="157" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Choose from LIbrary"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Y1F-gF-iHZ">
-                                <rect key="frame" x="98" y="340.5" width="219" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ove-JS-cAa">
-                                <rect key="frame" x="81" y="545" width="106" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Take a Selfie"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ciy-Pv-IJZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vwa-Ov-zL1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3635" y="1519"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="9GW-79-cfg">
             <objects>
                 <viewController id="dNC-Qc-FG5" sceneMemberID="viewController">
@@ -597,14 +564,23 @@
             </objects>
             <point key="canvasLocation" x="3259" y="82"/>
         </scene>
-        <!--View Controller-->
+        <!--Web Table View Controller-->
         <scene sceneID="0TN-L6-mjj">
             <objects>
-                <viewController id="bvT-6I-7Qx" sceneMemberID="viewController">
+                <viewController id="bvT-6I-7Qx" customClass="WebTableViewController" customModule="esteeLauderProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gap-36-w1g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q6N-7h-yLJ">
+                                <rect key="frame" x="224" y="670" width="160" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.62842965129999995" green="0.65553635359999995" blue="0.87577754259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" applicationNameForUserAgent="website">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4 copy" translatesAutoresizingMaskIntoConstraints="NO" id="Aoc-2G-OKl">
                                 <rect key="frame" x="-512" y="-106" width="1210" height="1047"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -745,36 +721,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="rFA-Vh-Nbo"/>
+                    <connections>
+                        <outlet property="myWebView" destination="cBL-8h-SzO" id="GeW-VW-7p6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTw-Bg-FwV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3258" y="802"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="BVa-w1-PpE">
-            <objects>
-                <viewController id="FIC-qm-sW3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="faP-gu-ABf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q6N-7h-yLJ">
-                                <rect key="frame" x="43" y="156" width="328" height="395"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.62842965129999995" green="0.65553635359999995" blue="0.87577754259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration" applicationNameForUserAgent="website">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="icT-Gu-ZeE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WUy-hh-21y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4062" y="802"/>
+            <point key="canvasLocation" x="3257.971014492754" y="801.5625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ogy-o1-BkY">
@@ -1363,7 +1316,6 @@
         <image name="Screen Shot 2022-06-16 at 1.51.36 PM" width="257" height="510"/>
         <image name="Screen Shot 2022-06-16 at 1.51.41 PM" width="219" height="500"/>
         <image name="bag" catalog="system" width="128" height="128"/>
-        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="doubleWear" width="1049" height="709"/>
         <image name="esteeLogoBlack" width="346" height="57"/>
         <image name="force" width="1334" height="750"/>

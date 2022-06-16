@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		957CD085285BCBCA00FE183D /* WebTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957CD084285BCBC900FE183D /* WebTableViewController.swift */; };
 		959E4BE8285A9EA50063735B /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E4BE7285A9EA50063735B /* SecondTableViewController.swift */; };
 		95DB757A285A704F003A1FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DB7579285A704F003A1FA3 /* AppDelegate.swift */; };
 		95DB757C285A704F003A1FA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DB757B285A704F003A1FA3 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		957CD084285BCBC900FE183D /* WebTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTableViewController.swift; sourceTree = "<group>"; };
 		959E4BE7285A9EA50063735B /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
 		95DB7576285A704F003A1FA3 /* esteeLauderProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esteeLauderProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DB7579285A704F003A1FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				95DB758A285A7052003A1FA3 /* Info.plist */,
 				95DB7582285A704F003A1FA3 /* esteeLauderProject.xcdatamodeld */,
 				959E4BE7285A9EA50063735B /* SecondTableViewController.swift */,
+				957CD084285BCBC900FE183D /* WebTableViewController.swift */,
 			);
 			path = esteeLauderProject;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957CD085285BCBCA00FE183D /* WebTableViewController.swift in Sources */,
 				95DB757E285A704F003A1FA3 /* ViewController.swift in Sources */,
 				95DB7584285A704F003A1FA3 /* esteeLauderProject.xcdatamodeld in Sources */,
 				959E4BE8285A9EA50063735B /* SecondTableViewController.swift in Sources */,
